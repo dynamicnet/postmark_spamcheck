@@ -15,14 +15,14 @@ Requirements
 
 ## Usage
 
-<?php
+	<?php
 
-require_once "Postmark_SpamCheck.php";
+		require_once "Postmark_SpamCheck.php";
 
-$RawEmail = <<<EOT
-Here is the raw email, including headers
-EOT;
+		$RawEmail = <<<EOT
+		Here is the raw email, including headers
+		EOT;
 
-$SpamCheck = new Postmark_SpamCheck();
+		$SpamCheck = new Postmark_SpamCheck();
 
-$Result = $SpamCheck->setMode("long")->setRawEmail($RawEmail)->check();
+		$Result = $SpamCheck->setMode("long")->setRawEmail($RawEmail)->check();
